@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 360" font-family="'Segoe UI', Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="820" height="360" fill="#f8f9fa" rx="12"/>
+
+  <!-- ── HTTP Client ── -->
+  <rect x="30" y="130" width="110" height="90" rx="10" fill="#ffffff" stroke="#cbd5e0" stroke-width="1.5"/>
+  <text x="85" y="154" text-anchor="middle" font-size="12" font-weight="600" fill="#555">HTTP Client</text>
+  <text x="85" y="183" text-anchor="middle" font-size="26">🧑</text>
+
+  <!-- Arrow: Client ↔ App -->
+  <line x1="140" y1="170" x2="200" y2="170" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="200" y1="180" x2="140" y2="180" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+
+  <!-- ── Quarkus App ── -->
+  <rect x="200" y="90" width="240" height="170" rx="12" fill="#ffffff" stroke="#4695EB" stroke-width="2"/>
+  <rect x="200" y="90" width="240" height="36" rx="12" fill="#4695EB"/>
+  <rect x="200" y="110" width="240" height="16" fill="#4695EB"/>
+  <text x="320" y="113" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Quarkus App</text>
+  <text x="320" y="182" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1a2e">The Coffee Shop</text>
+  <text x="320" y="210" text-anchor="middle" font-size="10" fill="#4695EB" font-weight="600">quarkus.io</text>
+
+  <!-- Arrow: App → Coffee Machine -->
+  <line x1="440" y1="155" x2="510" y2="155" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="510" y1="165" x2="440" y2="165" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+
+  <!-- Arrow: App → PostgreSQL -->
+  <line x1="440" y1="220" x2="510" y2="250" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Arrow: App → LGTM (upward) -->
+  <line x1="320" y1="90" x2="320" y2="50" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ── Coffee Machine ── -->
+  <rect x="510" y="105" width="130" height="85" rx="10" fill="#ffffff" stroke="#cbd5e0" stroke-width="1.5"/>
+  <text x="575" y="128" text-anchor="middle" font-size="11" font-weight="600" fill="#555">Coffee Machine</text>
+  <text x="575" y="154" text-anchor="middle" font-size="24">☕</text>
+  <text x="575" y="178" text-anchor="middle" font-size="10" fill="#888">WireMock · 3 s</text>
+
+  <!-- ── PostgreSQL ── -->
+  <rect x="510" y="215" width="130" height="80" rx="10" fill="#ffffff" stroke="#cbd5e0" stroke-width="1.5"/>
+  <text x="575" y="237" text-anchor="middle" font-size="11" font-weight="600" fill="#555">PostgreSQL</text>
+  <text x="575" y="260" text-anchor="middle" font-size="24">🐘</text>
+  <text x="575" y="282" text-anchor="middle" font-size="10" fill="#888">DevService</text>
+
+  <!-- ── LGTM Stack ── -->
+  <rect x="200" y="10" width="240" height="50" rx="10" fill="#ffffff" stroke="#F97316" stroke-width="1.5"/>
+  <text x="320" y="32" text-anchor="middle" font-size="12" font-weight="600" fill="#555">LGTM Stack</text>
+  <text x="320" y="50" text-anchor="middle" font-size="10" fill="#888">Loki · Grafana · Tempo · Prometheus</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+</svg>

@@ -1,0 +1,74 @@
+### GET Blocking Simple
+GET http://localhost:8080/beverage/blocking
+
+### GET Blocking Sequential
+GET http://localhost:8080/beverage/blocking/sequential
+
+### GET Blocking Parallel
+GET http://localhost:8080/beverage/blocking/parallel
+
+### GET Blocking Flood
+GET http://localhost:8080/beverage/blocking/flood?count=100
+
+### GET Blocking Failfast
+GET http://localhost:8080/beverage/blocking/failfast
+
+### GET Reactive Single
+GET http://localhost:8080/beverage/reactive
+
+### GET Reactive Sequential
+GET http://localhost:8080/beverage/reactive/sequential
+
+### GET Reactive Parallel
+GET http://localhost:8080/beverage/reactive/parallel
+
+### GET Reactive Flood
+GET http://localhost:8080/beverage/reactive/flood?count=100
+
+### GET Reactive Failfast
+GET http://localhost:8080/beverage/reactive/failfast
+
+### GET Virtual Single
+GET http://localhost:8080/beverage/virtual
+
+### GET Virtual Sequential
+GET http://localhost:8080/beverage/virtual/sequential
+
+### GET Virtual Parallel
+GET http://localhost:8080/beverage/virtual/parallel
+
+### GET Virtual Custom
+GET http://localhost:8080/beverage/virtual/custom
+
+### GET Virtual Flood
+GET http://localhost:8080/beverage/virtual/flood?count=100
+
+### GET Virtual Failfast
+GET http://localhost:8080/beverage/virtual/failfast
+
+### GET Structured Simple
+GET http://localhost:8080/beverage/structured/simple
+
+### GET Structured Custom
+GET http://localhost:8080/beverage/structured/custom
+
+### GET Structured Race
+GET http://localhost:8080/beverage/structured/race
+
+### GET Structured Failfast
+GET http://localhost:8080/beverage/structured/failfast
+
+### GET Structured Timeout
+GET http://localhost:8080/beverage/structured/timeout
+
+### GET Pinning Pinned
+GET http://localhost:8080/beverage/pinning/pinned
+
+### GET Pinning Unpinned
+GET http://localhost:8080/beverage/pinning/unpinned
+
+### GET Pinning Pinned Parallel
+GET http://localhost:8080/beverage/pinning/pinned/parallel
+
+### GET Pinning Unpinned Parallel
+GET http://localhost:8080/beverage/pinning/unpinned/parallel

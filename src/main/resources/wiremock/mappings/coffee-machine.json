@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/coffee-machine/brew"
+  },
+  "response": {
+    "status": 200,
+    "headers": { "Content-Type": "application/json" },
+    "jsonBody": { "name": "Coffee" },
+    "fixedDelayMilliseconds": 3000
+  }
+}

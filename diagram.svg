@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" font-family="'Segoe UI', Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="960" height="520" fill="#f8f9fa" rx="12"/>
+
+  <!-- Title -->
+  <text x="480" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">Concurrency Crossroads</text>
+  <text x="480" y="58" text-anchor="middle" font-size="13" fill="#666">Quarkus · Virtual Threads · Structured Concurrency</text>
+
+  <!-- ── HTTP Client ── -->
+  <rect x="30" y="190" width="120" height="140" rx="10" fill="#ffffff" stroke="#cbd5e0" stroke-width="1.5"/>
+  <text x="90" y="218" text-anchor="middle" font-size="11" font-weight="600" fill="#555">HTTP Client</text>
+  <!-- person icon -->
+  <circle cx="90" cy="245" r="14" fill="#e2e8f0"/>
+  <text x="90" y="251" text-anchor="middle" font-size="18">🧑</text>
+  <text x="90" y="285" text-anchor="middle" font-size="10" fill="#888">REST calls</text>
+  <text x="90" y="300" text-anchor="middle" font-size="10" fill="#888">examples.http</text>
+
+  <!-- Arrow: Client → App -->
+  <line x1="150" y1="260" x2="200" y2="260" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ── Quarkus App ── -->
+  <rect x="200" y="80" width="520" height="360" rx="12" fill="#ffffff" stroke="#4695EB" stroke-width="2"/>
+  <!-- Quarkus label strip -->
+  <rect x="200" y="80" width="520" height="36" rx="12" fill="#4695EB"/>
+  <rect x="200" y="100" width="520" height="16" fill="#4695EB"/>
+  <text x="460" y="103" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Quarkus Application  (Java 26 · Dev Mode)</text>
+
+  <!-- Approach rows -->
+  <!-- 1 Blocking -->
+  <rect x="220" y="132" width="480" height="50" rx="8" fill="#fff5f5" stroke="#fc8181" stroke-width="1.5"/>
+  <rect x="220" y="132" width="6" height="50" rx="3" fill="#E53E3E"/>
+  <text x="238" y="153" font-size="12" font-weight="700" fill="#C53030">01 · Blocking</text>
+  <text x="238" y="170" font-size="11" fill="#718096">Platform threads · @Transactional · Hibernate ORM</text>
+  <text x="676" y="162" font-size="10" fill="#C53030" text-anchor="end">/beverage/blocking</text>
+
+  <!-- 2 Reactive -->
+  <rect x="220" y="192" width="480" height="50" rx="8" fill="#ebf8ff" stroke="#63b3ed" stroke-width="1.5"/>
+  <rect x="220" y="192" width="6" height="50" rx="3" fill="#3182CE"/>
+  <text x="238" y="213" font-size="12" font-weight="700" fill="#2B6CB0">02 · Reactive</text>
+  <text x="238" y="230" font-size="11" fill="#718096">Mutiny · Vert.x event loop · Hibernate Reactive</text>
+  <text x="676" y="222" font-size="10" fill="#2B6CB0" text-anchor="end">/beverage/reactive</text>
+
+  <!-- 3 Virtual Threads -->
+  <rect x="220" y="252" width="480" height="50" rx="8" fill="#f0fff4" stroke="#68d391" stroke-width="1.5"/>
+  <rect x="220" y="252" width="6" height="50" rx="3" fill="#38A169"/>
+  <text x="238" y="273" font-size="12" font-weight="700" fill="#276749">03 · Virtual Threads</text>
+  <text x="238" y="290" font-size="11" fill="#718096">@RunOnVirtualThread · Hibernate ORM · no reactive API</text>
+  <text x="676" y="282" font-size="10" fill="#276749" text-anchor="end">/beverage/virtual</text>
+
+  <!-- 4 Structured Concurrency -->
+  <rect x="220" y="312" width="480" height="50" rx="8" fill="#faf5ff" stroke="#b794f4" stroke-width="1.5"/>
+  <rect x="220" y="312" width="6" height="50" rx="3" fill="#805AD5"/>
+  <text x="238" y="333" font-size="12" font-weight="700" fill="#553C9A">04 · Structured Concurrency</text>
+  <text x="238" y="350" font-size="11" fill="#718096">StructuredTaskScope · race / fail-fast / timeout  (JEP 464)</text>
+  <text x="676" y="342" font-size="10" fill="#553C9A" text-anchor="end">/beverage/structured</text>
+
+  <!-- 5 Pinning -->
+  <rect x="220" y="372" width="480" height="50" rx="8" fill="#fffaf0" stroke="#f6ad55" stroke-width="1.5"/>
+  <rect x="220" y="372" width="6" height="50" rx="3" fill="#DD6B20"/>
+  <text x="238" y="393" font-size="12" font-weight="700" fill="#C05621">05 · Pinning Analysis</text>
+  <text x="238" y="410" font-size="11" fill="#718096">synchronized (pins) vs ReentrantLock (yields) · @ShouldNotPin</text>
+  <text x="676" y="402" font-size="10" fill="#C05621" text-anchor="end">/beverage/pinning</text>
+
+  <!-- Arrow: App → WireMock -->
+  <line x1="720" y1="220" x2="790" y2="220" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- Arrow back -->
+  <line x1="790" y1="232" x2="720" y2="232" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+
+  <!-- Arrow: App → PostgreSQL -->
+  <line x1="720" y1="360" x2="790" y2="360" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ── WireMock (Coffee Machine) ── -->
+  <rect x="790" y="170" width="140" height="100" rx="10" fill="#ffffff" stroke="#cbd5e0" stroke-width="1.5"/>
+  <text x="860" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#555">Coffee Machine</text>
+  <text x="860" y="215" text-anchor="middle" font-size="20">☕</text>
+  <text x="860" y="240" text-anchor="middle" font-size="10" fill="#888">WireMock</text>
+  <text x="860" y="255" text-anchor="middle" font-size="10" fill="#C05621">3 s delay (dev)</text>
+
+  <!-- ── PostgreSQL ── -->
+  <rect x="790" y="310" width="140" height="100" rx="10" fill="#ffffff" stroke="#cbd5e0" stroke-width="1.5"/>
+  <text x="860" y="338" text-anchor="middle" font-size="11" font-weight="600" fill="#555">PostgreSQL</text>
+  <text x="860" y="358" text-anchor="middle" font-size="20">🐘</text>
+  <text x="860" y="383" text-anchor="middle" font-size="10" fill="#888">DevService</text>
+  <text x="860" y="398" text-anchor="middle" font-size="10" fill="#888">auto-provisioned</text>
+
+  <!-- ── DevServices badge ── -->
+  <rect x="790" y="430" width="140" height="34" rx="8" fill="#4695EB" opacity="0.15" stroke="#4695EB" stroke-width="1"/>
+  <text x="860" y="452" text-anchor="middle" font-size="10" font-weight="600" fill="#2B5797">+ LGTM DevService</text>
+  <text x="860" y="464" text-anchor="middle" font-size="9" fill="#2B5797">Grafana · metrics</text>
+
+  <!-- ── Legend ── -->
+  <text x="30" y="410" font-size="10" fill="#999">HTTP request</text>
+  <line x1="30" y1="422" x2="70" y2="422" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="80" y="426" font-size="10" fill="#999">sync</text>
+  <line x1="110" y1="422" x2="150" y2="422" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+  <text x="160" y="426" font-size="10" fill="#999">response</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+</svg>
