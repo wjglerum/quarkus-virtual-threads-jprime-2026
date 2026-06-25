@@ -68,7 +68,7 @@ The reactive model. Requests run on the Vert.x event loop; the thread is **never
 
 - Maximum throughput on a small number of threads
 - Code complexity: nested `Uni` chains instead of straight-line code
-- Uses `@WithTransaction` + Hibernate Reactive
+- Uses `@Transactional` + Hibernate Reactive (via the `quarkus-reactive-transactions` extension, with an injected `Mutiny.Session` instead of Panache)
 
 | Endpoint | Description |
 |---|---|
