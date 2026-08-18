@@ -123,7 +123,7 @@
                 <version>${quarkus.platform.version}</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <jvmArgs>-Djdk.tracePinnedThreads=short</jvmArgs>
+                    <jvmArgs>-Djdk.tracePinnedThreads=short --enable-native-access=ALL-UNNAMED</jvmArgs>
                 </configuration>
             </plugin>
             <plugin>
