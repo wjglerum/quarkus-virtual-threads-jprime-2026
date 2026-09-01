@@ -96,7 +96,7 @@
         <dependency>
             <groupId>io.quarkiverse.wiremock</groupId>
             <artifactId>quarkus-wiremock</artifactId>
-            <version>1.6.3</version>
+            <version>1.7.0</version>
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
