@@ -6,9 +6,18 @@ updates:
       interval: "monthly"
       time: "07:00"
       timezone: "Europe/Amsterdam"
+    # Bundle every Maven bump into one pull request.
+    groups:
+      maven:
+        patterns:
+          - "*"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "monthly"
       time: "07:00"
       timezone: "Europe/Amsterdam"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
